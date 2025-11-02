@@ -34,3 +34,5 @@ obj[course1] = {courseId : "Level-1"} ;
 
 console.log(obj);
 console.log(obj["[object Object]"]);
+
+// if object key and object value both ar object then the key become [object object]
