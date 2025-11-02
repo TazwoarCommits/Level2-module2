@@ -24,15 +24,37 @@
 
 // ------------------------
 
-const course1 = {name : "P H"} ;
-const course2 = { name : "N L"} ;
+// const course1 = {name : "P H"} ;
+// const course2 = { name : "N L"} ;
 
-const obj = {} ;
+// const obj = {} ;
 
-obj.nextLevel = {courseId : "Level-2"} ;
-obj[course1] = {courseId : "Level-1"} ; 
+// obj.nextLevel = {courseId : "Level-2"} ;
+// obj[course1] = {courseId : "Level-1"} ; 
 
-console.log(obj);
-console.log(obj["[object Object]"]);
+// console.log(obj);
+// console.log(obj["[object Object]"]);
 
 // if object key and object value both ar object then the key become [object object]
+
+// --------------------
+
+const course1 = {name : "Programming Hero"} ;
+const course2 = { name : "Next Level Web Development"} ;
+
+const map = new Map() ;
+
+map.set(course1, {courseId : "Level-1"});
+map.set(course2, {courseId : "Level-2"});
+
+// map.delete(course2) ===> delete a certain key
+// map.forEach()
+// map.clear()===> clear all
+console.log(map);
+console.log(map.size);
+console.log(map.has(course1));
+
+
+// Map helps to collect cache data
+
+ 
