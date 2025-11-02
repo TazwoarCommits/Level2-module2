@@ -48,11 +48,14 @@ map.set(course1, {courseId : "Level-1"});
 map.set(course2, {courseId : "Level-2"});
 
 // map.delete(course2) ===> delete a certain key
-// map.forEach()
 // map.clear()===> clear all
-console.log(map);
-console.log(map.size);
-console.log(map.has(course1));
+// map.forEach() ===> for iteration
+
+map.forEach((value, key) => console.log("Key :  " , key, "Value :  ", value)) ;
+
+// console.log(map);
+// console.log(map.size);
+// console.log(map.has(course1));
 
 
 // Map helps to collect cache data
