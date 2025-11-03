@@ -11,8 +11,12 @@ console.log(nums);
 //
 
 const fruits = ["apples", "Banana", "Grapes", "peer", "avocado"]
+const fruits2 = ["apples", "Banana", "Grapes", "peer", "avocado"]
 
 const basket = fruits.sort() ;
+const basket2 = fruits2.sort((a, b) => b.localeCompare(a)) ;
 
 console.log(basket);
 console.log(fruits);
+console.log(fruits2);
+console.log(basket2);
