@@ -53,9 +53,8 @@ map.set(course2, {courseId : "Level-2"});
 
 map.forEach((value, key) => console.log("Key :  " , key, "Value :  ", value)) ;
 
-// console.log(map);
-// console.log(map.size);
-// console.log(map.has(course1));
+// 
+   
 
 
 // Map helps to collect cache data
