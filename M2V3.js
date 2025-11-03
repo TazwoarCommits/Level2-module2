@@ -24,9 +24,13 @@ const basket2 = fruits2.sort((a, b) => b.localeCompare(a)) ;
 // console.log(basket2);
 
 const arr1 = [1,2,3,[4,[5,[6,7,8,9]]]] ; 
+const arr10 = [10,20,30,[40,[50,[60,70,80,90,[100]]]]] ; 
 
 const arr2 = arr1.flat();
-const arr3 = arr2.flat(2)
+const arr3 = arr1.flat(2)
 
-console.log(arr2);
-console.log( arr3);
+const arr20 = arr10.flat(Infinity) ;
+
+console.log("1 Layered nested array removed",arr2);
+console.log("2 Layered nested array removed",arr3);
+console.log("All Layered nested array removed",arr20);
