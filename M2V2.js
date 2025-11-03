@@ -112,5 +112,24 @@ const topElectronics = rawApiData.filter(item => item.category === "Electronics"
     return { name : item.productName}
  }) ; 
 
+// |^|^|^|^
 
-console.log(topElectronics);
+// This can be used for creating both shorter or longer array of objects and in this case we must have to return a object. 
+
+// Example : .map(item => { 
+//     return { name : item.productName}
+//  })
+
+// --------------
+
+const topElectronics2 = rawApiData.filter(item => item.category === "Electronics") 
+.sort((a, b) => b.rating - a.rating).slice(0,3).map(item => ({name:item.productName})) ; 
+
+
+// |^|^|^|^
+
+// This is better for creating shorter array of objects. But it have to be a oneliner command and use of parenthesis (....) 
+// Example : .map(item => ({name:item.productName}))
+
+console.log("With 'return' must",topElectronics);
+console.log("With '(oneliner parenthesis)' must",topElectronics2);
