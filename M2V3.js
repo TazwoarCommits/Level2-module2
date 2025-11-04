@@ -31,6 +31,17 @@ const arr3 = arr1.flat(2)
 
 const arr20 = arr10.flat(Infinity) ;
 
-console.log("1 Layered nested array removed",arr2);
-console.log("2 Layered nested array removed",arr3);
-console.log("All Layered nested array removed",arr20);
+// console.log("1 Layered nested array removed",arr2);
+// console.log("2 Layered nested array removed",arr3);
+// console.log("All Layered nested array removed",arr20);
+
+
+const tagsFromPost = [
+  ["Js", "react", "css" ], 
+  ["node", "express"],
+  ["css", "html", "react"]
+]
+
+const filteredTags = new Set(tagsFromPost.flat())
+
+console.log(filteredTags);
