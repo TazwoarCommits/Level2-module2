@@ -21,9 +21,11 @@ const canAccess = currentUserRole.some( role => featureAccessRoles.includes(role
 console.log(canAccess);
 
 
+// const arr = Array.from({length : 5}).fill()
 
+const arr = Array.from({length : 10}, (_, i) => i ) ;
 
-
+console.log(arr);
 
 
 
