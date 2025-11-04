@@ -22,8 +22,17 @@ const players = [
   { name: "Sohel Rana", score: 72 },
 ];
 
+const bestScorrer = players.reduce((bestPlayer , player) => {
+    if (bestPlayer.score > player.score){
+        return bestPlayer ; 
+    }
+
+    return player ; 
+     
+} , players[0]) ; 
 
 
+console.log(bestScorrer);
 
 
 
